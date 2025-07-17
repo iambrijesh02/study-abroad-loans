@@ -23,7 +23,7 @@ export default function PartnersSection() {
     },
     {
       name: "Kotak Bank",
-      logo: "images/partner3.jpg",
+      logo: "images/partner5.jpg",
     },
     {
       name: "Yes Bank",
@@ -31,7 +31,7 @@ export default function PartnersSection() {
     },
     {
       name: "Bank of Baroda",
-      logo: "images/partner5.jpg",
+      logo: "images/partner7.jpg",
     },
     {
       name: "Canara Bank",
@@ -50,7 +50,7 @@ export default function PartnersSection() {
   }, [totalSlides])
 
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-white">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Our Partners</h2>
 

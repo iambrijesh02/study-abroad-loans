@@ -42,11 +42,12 @@ body {
 .custom-logo img { position: absolute;
     top: 13%;
     width: 110px;}
-
-.bg-primary-blue {background-color:#0C355D;}
-.btn-primary {
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-  color: white;
+    
+.btn-banner {border-radius: 80px;
+border: 3px solid #00A2F1;
+background: #03407C;
+box-shadow: 4.667px 4.667px 1.167px 0px rgba(0, 0, 0, 0.17);
+color: white;
   padding: 12px 24px;
   border-radius: 25px;
   border: none;
@@ -54,6 +55,8 @@ body {
   font-weight: 600;
   transition: all 0.3s ease;
 }
+.bg-primary-blue {background-color:#0C355D;}
+
 
 .btn-primary:hover {
   transform: translateY(-2px);

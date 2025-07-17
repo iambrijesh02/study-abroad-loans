@@ -10,7 +10,7 @@ export default function HeroSection() {
               Get Education Loan from India's most trusted education loan provider. Quick approval, competitive interest
               rates, and flexible repayment options.
             </p>
-            <button className="btn-primary text-lg animate__animated animate__pulse animate__infinite">
+            <button className="btn btn-banner text-lg animate__animated animate__pulse animate__infinite">
               <i className="fas fa-check-circle mr-2"></i>
               Check Your Eligibility
             </button>
