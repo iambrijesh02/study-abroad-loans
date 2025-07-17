@@ -5,41 +5,20 @@ export default function PartnersSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const partners = [
-    {
-      name: "HDFC Bank",
-      logo: "images/partner1.jpg",
-    },
-    {
-      name: "ICICI Bank",
-      logo: "images/partner2.jpg",
-    },
-    {
-      name: "SBI",
-      logo: "images/partner3.jpg",
-    },
-    {
-      name: "Axis Bank",
-      logo: "images/partner4.jpg",
-    },
-    {
-      name: "Kotak Bank",
-      logo: "images/partner5.jpg",
-    },
-    {
-      name: "Yes Bank",
-      logo: "images/partner6.jpg",
-    },
-    {
-      name: "Bank of Baroda",
-      logo: "images/partner7.jpg",
-    },
-    {
-      name: "Canara Bank",
-      logo: "images/partner4.jpg",
-    },
+    { name: "HDFC Bank", logo: "images/partner1.jpg" },
+    { name: "ICICI Bank", logo: "images/partner2.jpg" },
+    { name: "SBI", logo: "images/partner3.jpg" },
+    { name: "Axis Bank", logo: "images/partner4.jpg" },
+    { name: "Kotak Bank", logo: "images/partner5.jpg" },
+    { name: "Yes Bank", logo: "images/partner6.jpg" },
+    { name: "Bank of Baroda", logo: "images/partner5.jpg" },
+    { name: "Canara Bank", logo: "images/partner4.jpg" },
+      { name: "Yes Bank", logo: "images/partner6.jpg" },
+    { name: "Bank of Baroda", logo: "images/partner5.jpg" },
+
   ]
 
-  const partnersPerSlide = 4
+  const partnersPerSlide = 5 
   const totalSlides = Math.ceil(partners.length / partnersPerSlide)
 
   useEffect(() => {
@@ -50,9 +29,9 @@ export default function PartnersSection() {
   }, [totalSlides])
 
   return (
-    <section className="section-padding bg-white">
+    <section className="pb-12 bg-white">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Our Partners</h2>
+        <h2 className="partner-title text-3xl font-bold text-center mb-2 text-gray-800">Our <span className="primary-blue">Partners</span></h2>
 
         <div className="relative overflow-hidden">
           <div

@@ -1,6 +1,6 @@
 export default function CTASection() {
   return (
-    <section className="section-padding gradient-bg text-white relative overflow-hidden">
+    <section className="section-padding text-blue relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-20 h-20 border-2 border-white rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-32 h-32 border-2 border-white rounded-full"></div>
@@ -9,7 +9,7 @@ export default function CTASection() {
 
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate__animated animate__fadeInUp">
+          <h2 className="text-3xl md:text-4xl text-blue font-bold mb-6 animate__animated animate__fadeInUp">
             Take The Next Step Toward Your Dream University
           </h2>
           <p className="text-lg mb-8 opacity-90 animate__animated animate__fadeInUp" style={{ animationDelay: "0.2s" }}>

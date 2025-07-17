@@ -94,8 +94,8 @@ export default function TestimonialsSection() {
   }, [totalSlides])
 
   return (
-    <section className="section-padding gradient-bg text-white relative overflow-hidden">
-      {/* Background Pattern */}
+    <section className="section-padding testimonial-section text-white relative overflow-hidden">
+     
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 text-6xl font-bold transform rotate-12">Testimonials</div>
         <div className="absolute bottom-32 right-32 text-4xl font-bold transform -rotate-12">Testimonials</div>
@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
         <div className="absolute top-1/3 right-1/4 text-3xl font-bold transform -rotate-45">Testimonials</div>
       </div>
 
-      {/* Decorative Stars */}
+    
       <div className="absolute top-8 left-8 text-yellow-400 text-4xl animate-bounce-slow">
         <i className="fas fa-star"></i>
       </div>
@@ -121,10 +121,10 @@ export default function TestimonialsSection() {
       </div>
 
       <div className="container relative z-10">
-        {/* Section Title */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Testimonials</h2>
+      
+        <h2 className="text-4xl md:text-5xl font-semi-bold text-center mb-16">Testimonials</h2>
 
-        {/* Testimonials Carousel Container */}
+     
         <div className="max-w-7xl mx-auto">
           <div className="relative overflow-hidden">
             <div
@@ -149,7 +149,7 @@ export default function TestimonialsSection() {
                           key={index}
                           className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-xl h-full flex flex-col"
                         >
-                          {/* User Info and Rating */}
+                   
                           <div className="flex items-center mb-4">
                             <img
                               src={testimonial.image || "/placeholder.svg"}
@@ -166,10 +166,10 @@ export default function TestimonialsSection() {
                             </div>
                           </div>
 
-                          {/* Testimonial Text */}
+                    
                           <p className="text-white/90 leading-relaxed mb-4 flex-1">"{testimonial.text}"</p>
 
-                          {/* Course and University */}
+                  
                           <div className="border-t border-white/20 pt-4">
                             <p className="text-blue-200 text-sm font-medium">{testimonial.course}</p>
                             <p className="text-blue-300 text-xs">{testimonial.university}</p>
@@ -182,7 +182,7 @@ export default function TestimonialsSection() {
             </div>
           </div>
 
-          {/* Indicator Dots */}
+       
           <div className="flex justify-center mt-12 space-x-3">
             {Array.from({ length: totalSlides }).map((_, index) => (
               <button

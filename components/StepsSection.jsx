@@ -6,7 +6,7 @@ export default function StepsSection() {
       description: "Fill out our simple application form with your personal and academic details.",
       icon: "fas fa-user-edit",
       image:
-        "https://images.pexels.com/photos/5212663/pexels-photo-5212663.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        "images/step1.png",
     },
     {
       step: "2",
@@ -14,7 +14,7 @@ export default function StepsSection() {
       description: "Our experts will review your application and provide pre-qualification within 24 hours.",
       icon: "fas fa-check-circle",
       image:
-        "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        "images/step2.png",
     },
     {
       step: "3",
@@ -22,14 +22,14 @@ export default function StepsSection() {
       description: "Complete the final application process with required documents and get approved.",
       icon: "fas fa-file-signature",
       image:
-        "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        "images/step3.png",
     },
   ]
 
   return (
     <section className="section-padding bg-white">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">3 Steps To Apply For An Education Loan</h2>
+        <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">3 Steps To Apply For An <span className="">Education Loan</span> </h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Simple and straightforward process to get your education loan approved
         </p>
@@ -38,16 +38,16 @@ export default function StepsSection() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="text-center animate__animated animate__fadeInUp"
+              className="text-center animate__animated animate__fadeInUp step-wrap"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative mb-6">
                 <img
                   src={step.image || "/placeholder.svg"}
                   alt={step.title}
-                  className="w-20 h-20 rounded-full mx-auto mb-4 shadow-lg object-cover"
+                  className="w-60 h-160 mx-auto mb-4 object-cover"
                 />
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center text-white font-bold text-sm">
                   {step.step}
                 </div>
               </div>
@@ -58,9 +58,7 @@ export default function StepsSection() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="btn-primary text-lg">Start Your Application</button>
-        </div>
+    
       </div>
     </section>
   )
